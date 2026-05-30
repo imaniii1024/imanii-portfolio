@@ -1,0 +1,13 @@
+{
+  "name": "imanii-portfolio-rebuild",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "sass:build": "sass src/assets/scss/style.scss assets/css/style.css --style=expanded --no-source-map",
+    "sass:watch": "sass src/assets/scss/style.scss assets/css/style.css --style=expanded --no-source-map --watch --poll",
+    "serve": "python3 -m http.server 4173"
+  },
+  "devDependencies": {
+    "sass": "^1.89.1"
+  }
+}

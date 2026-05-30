@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="大阪府箕面市のWebコーダー、いまにーのプロフィールページ。制作姿勢、スキル、対応内容、作業環境を紹介します。"
+    />
+    <title>About | Imanii's Portfolio</title>
+    <link rel="icon" type="image/png" href="../assets/img/favicon.png" />
+    <link rel="apple-touch-icon" href="../assets/img/profile-icon.png" />
+    <link rel="stylesheet" href="../assets/css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@200..900&family=Quicksand:wght@300..700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <section class="l-header">
+      <div class="l-header__inner">
+        <div class="l-header__title-wrap">
+          <div class="l-header__logo">
+            <a href="../">
+              <img src="../assets/img/profile-icon 2.png" alt="サイトロゴ" />
+            </a>
+          </div>
+          <div class="l-header__title">
+            <a href="../">Imanii's<br />Portfolio</a>
+          </div>
+        </div>
+
+        <nav class="l-header__nav only-pc">
+          <ul class="l-header__nav-list">
+            <li class="l-header__nav-item"><a href="./">About</a></li>
+            <li class="l-header__nav-item"><a href="../works/">Works</a></li>
+            <li class="l-header__nav-item"><a href="../#price">Price</a></li>
+            <div class="l-header__button">
+              <a href="../contact/" class="btn__contact-small">Contact</a>
+            </div>
+          </ul>
+        </nav>
+      </div>
+    </section>
+
+    <div class="l-header__hamburger only-sp">
+      <button class="menu-trigger" id="menu03">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+
+    <div id="js-drawer-content" class="drawer-content">
+      <nav class="drawer-content__menu">
+        <a href="./" class="drawer-content__link">About</a>
+        <a href="../works/" class="drawer-content__link">Works</a>
+        <a href="../contact/" class="drawer-content__link">Contact</a>
+        <a href="../contact/" class="drawer-content__btn btn__contact-small">Contact</a>
+        <a
+          href="https://x.com/AZ3lVFQhfluqW78"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="drawer-content__sns btn__contact-small--black"
+          >X <span>エックス</span></a
+        >
+      </nav>
+    </div>
+
+    <div class="l-main">
+      <section class="about-page">
+        <div class="page__top">
+          <h1 class="page__top-en">About</h1>
+          <h3 class="page__top-ja">私について</h3>
+        </div>
+
+        <div class="about-story">
+          <section class="about-story__hero">
+            <div class="about-story__copy js-in-view fade-in-up">
+              <p class="about-story__label">Profile / Web Coder</p>
+              <h2>
+                生活に寄り添うように、<br />
+                伝わるWebサイトを丁寧に。
+              </h2>
+              <p>
+                本業と並行しながら、朝と夜の時間を使ってWeb制作に取り組んでいます。
+                限られた時間の中でも、ひとつひとつの確認を丁寧に行い、
+                安心して任せてもらえる制作を心がけています。
+              </p>
+              <div class="about-story__chips">
+                <span>Osaka Minoh</span>
+                <span>Web Coder</span>
+                <span>WordPress</span>
+              </div>
+            </div>
+
+            <div class="about-story__visual js-in-view fade-in-up">
+              <figure class="about-story__photo about-story__photo--main">
+                <img src="../assets/img/about-family.png" alt="家族のイラスト" />
+              </figure>
+              <figure class="about-story__photo about-story__photo--sub">
+                <img src="../assets/img/about-bike.jpeg" alt="ロードバイクの写真" />
+              </figure>
+              <figure class="about-story__photo about-story__photo--accent">
+                <img src="../assets/img/about-mountain.jpg" alt="山で撮影した写真" />
+              </figure>
+            </div>
+          </section>
+
+          <section class="about-story__section js-in-view fade-in-up">
+            <div class="section__title">
+              <h2 class="title-en">VALUE</h2>
+              <p class="title-ja">制作で大切にしていること</p>
+            </div>
+            <div class="about-story__cards">
+              <article>
+                <div class="about-story__card-text">
+                  <span>01</span>
+	                  <h3>伝わる構成</h3>
+	                  <p>
+	                    ただ見た目を整えるだけでなく、見る人が迷わず必要な情報へたどり着けるよう、
+	                    文章の流れや余白、ボタンの配置まで意識して制作します。
+	                  </p>
+                </div>
+                <figure class="about-story__card-image">
+                  <img src="../assets/img/about-family.png" alt="家族のイラスト" />
+                </figure>
+              </article>
+              <article>
+                <div class="about-story__card-text">
+                  <span>02</span>
+	                  <h3>丁寧な実装</h3>
+	                  <p>
+	                    IllustratorやFigmaのデザインカンプをもとに、余白・文字間・レスポンシブ時の見え方まで確認しながら、
+	                    細部まで丁寧にコーディングします。
+	                  </p>
+                </div>
+                <figure class="about-story__card-image">
+                  <img src="../assets/img/about-bike.jpeg" alt="ロードバイクの写真" />
+                </figure>
+              </article>
+              <article>
+                <div class="about-story__card-text">
+                  <span>03</span>
+	                  <h3>相談しやすさ</h3>
+	                  <p>
+	                    Chatworkなどを使ったやり取りにも対応し、確認事項や進捗をわかりやすく共有します。
+	                    小さな修正や公開後の調整も、気軽に相談してもらえる関係を大切にしています。
+	                  </p>
+                </div>
+                <figure class="about-story__card-image">
+                  <img src="../assets/img/about-mountain.jpg" alt="山で撮影した写真" />
+                </figure>
+              </article>
+            </div>
+          </section>
+
+          <section class="about-story__section about-story__split js-in-view fade-in-up">
+            <div class="about-story__panel">
+              <div class="section__title section__title--left">
+                <h2 class="title-en">SKILLS</h2>
+                <p class="title-ja">できること</p>
+              </div>
+              <ul class="about-story__skill-list">
+                <li><span>HTML / CSS / Sass</span><em>Illustratorなどのデザインカンプをもとにした静的コーディング</em></li>
+                <li><span>JavaScript</span><em>ハンバーガーメニュー、スクロールアニメーション、軽いUI実装</em></li>
+                <li><span>WordPress</span><em>オリジナルテーマ化、固定ページ、投稿まわりの実装</em></li>
+                <li><span>GitHub / GitLab</span><em>実績共有、作業データ管理、修正内容の共有に使用</em></li>
+                <li><span>Chatwork</span><em>案件進行中のやり取り、確認、報告をスムーズに対応</em></li>
+                <li><span>AI Coding</span><em>Codex、Claude Codeを活用したコーディング補助、実装確認、作業効率化</em></li>
+              </ul>
+            </div>
+            <div class="about-story__note">
+              <p class="about-story__label">Work Style</p>
+	              <h3>実務案件も複数対応。見えない部分まで丁寧に進めます。</h3>
+	              <p>
+	                Worksに掲載している自主制作に加えて、掲載外の実務案件も複数対応しています。
+	                Chatworkでの確認・報告、GitHubやGitLabを使った共有、AIツールを活用した実装補助など、
+	                スムーズに進めるための環境づくりも大切にしています。
+	              </p>
+              <dl>
+                <div>
+                  <dt>Area</dt>
+                  <dd>大阪府箕面市</dd>
+                </div>
+                <div>
+                  <dt>Time</dt>
+                  <dd>AM 5:00-7:00 / PM 10:00-12:00</dd>
+                </div>
+                <div>
+                  <dt>Tools</dt>
+                  <dd>VS Code / Illustrator / Figma / GitHub / GitLab / Chatwork / Codex / Claude Code</dd>
+                </div>
+              </dl>
+            </div>
+          </section>
+
+          <div class="about-story__actions js-in-view fade-in-up">
+            <a href="../works/" class="btn__more-small">制作実績を見る →</a>
+            <a href="../contact/" class="btn__contact-small">相談する</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="contact">
+        <div class="contact__inner">
+          <a href="../contact/" class="contact__contact">
+            Contact <span>お問い合わせ</span></a
+          >
+          <a
+            href="https://x.com/AZ3lVFQhfluqW78"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="contact__X"
+            >X <span>エックス</span></a
+          >
+        </div>
+      </section>
+    </div>
+
+    <footer class="l-footer" role="contentinfo" aria-label="サイトフッター">
+      <div class="l-footer__inner">
+        <small class="l-footer__copy">
+          &copy; <span id="copy-year">2026</span> Imanii's Portfolio — All
+          rights reserved / Web Coder
+        </small>
+      </div>
+    </footer>
+
+    <script src="../assets/js/main.js"></script>
+  </body>
+</html>

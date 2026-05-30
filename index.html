@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="大阪府箕面市のWebコーダー、いまにーのポートフォリオサイト。LP・ホームページ制作、WordPress、修正対応を承ります。"
+    />
+    <title>Imanii's Portfolio</title>
+    <link rel="icon" type="image/png" href="./assets/img/favicon.png" />
+    <link rel="apple-touch-icon" href="./assets/img/profile-icon.png" />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@200..900&family=Quicksand:wght@300..700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <section class="l-header">
+      <div class="l-header__inner">
+        <div class="l-header__title-wrap">
+          <div class="l-header__logo">
+            <a href="./">
+              <img
+                src="./assets/img/profile-icon 2.png"
+                alt="サイトロゴ"
+              />
+            </a>
+          </div>
+          <div class="l-header__title">
+            <a href="./">Imanii's<br />Portfolio</a>
+          </div>
+        </div>
+
+        <nav class="l-header__nav only-pc">
+          <ul class="l-header__nav-list">
+            <li class="l-header__nav-item"><a href="./about/">About</a></li>
+            <li class="l-header__nav-item"><a href="./works/">Works</a></li>
+            <li class="l-header__nav-item"><a href="#price">Price</a></li>
+            <div class="l-header__button">
+              <a href="./contact/" class="btn__contact-small">Contact</a>
+            </div>
+          </ul>
+        </nav>
+      </div>
+    </section>
+
+    <div class="l-header__hamburger only-sp">
+      <button class="menu-trigger" id="menu03">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+
+    <div id="js-drawer-content" class="drawer-content">
+      <nav class="drawer-content__menu">
+        <a href="./about/" class="drawer-content__link">About</a>
+        <a href="./works/" class="drawer-content__link">Works</a>
+        <a href="./contact/" class="drawer-content__link">Contact</a>
+        <a href="./contact/" class="drawer-content__btn btn__contact-small">Contact</a>
+        <a href="https://x.com/AZ3lVFQhfluqW78" target="_blank" rel="noopener noreferrer" class="drawer-content__sns btn__contact-small--black"
+          >X <span>エックス</span></a
+        >
+      </nav>
+    </div>
+
+    <div class="l-main">
+      <section class="fv">
+        <div class="fv__inner">
+          <div class="fv__body">
+            <h1 class="fv__title js-in-view fade-in-slide">
+              シンプルで伝わるWEB制作
+            </h1>
+            <h2 class="fv__sub-title js-in-view fade-in-slide">
+              伝えたいことが、 <br />しっかり届くWebサイトを。
+            </h2>
+            <div class="fv__button only-pc">
+              <a href="./contact/" class="btn__contact-large">Contact</a>
+            </div>
+          </div>
+          <picture class="fv__image">
+            <source
+              media="(min-width: 768px)"
+              srcset="./assets/img/fv-pc-2.png"
+            />
+            <img
+              src="./assets/img/fv-sp.png"
+              alt="ファーストビューイメージ"
+            />
+          </picture>
+          <div class="fv__button only-sp">
+            <a href="./contact/" class="btn__contact-small">Contact</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="about" id="about">
+        <div class="about__inner">
+          <div
+            class="section__title about__title only-sp js-in-view fade-in-up"
+          >
+            <h2 class="title-en">ABOUT</h2>
+            <p class="title-ja">私について</p>
+          </div>
+          <div class="about__body">
+            <div class="about__image js-in-view fade-in-up">
+              <img
+                src="./assets/img/profile-icon.png"
+                alt="プロフィール画像"
+              />
+            </div>
+            <div class="about__content js-in-view fade-in-up">
+              <div
+                class="section__title about__title only-pc js-in-view fade-in-up"
+              >
+                <h2 class="title-en">ABOUT</h2>
+                <p class="title-ja">私について</p>
+              </div>
+	              <p class="about__content-text js-in-view fade-in-up">
+	                はじめまして、大阪府箕面市在住のいまにーです。<br />
+	                本業と並行しながら、朝と夜の時間を使ってWeb制作に取り組んでいます。<br />
+	                限られた時間の中でも、ひとつひとつの確認を丁寧に行い、<br />
+	                安心して任せてもらえる制作を心がけています。<br />
+	              </p>
+              <div class="about__skills js-in-view fade-in-up">
+                <h2>Skills & Work Style</h2>
+                <table>
+                  <tr>
+                    <th>Skills</th>
+                    <td>HTML / CSS (Sass) / JavaScript / PHP</td>
+                  </tr>
+                  <tr>
+                    <th>CMS</th>
+                    <td>WordPress <br class="only-sp" />(オリジナルテーマ)</td>
+                  </tr>
+                  <tr>
+                    <th>Works</th>
+                    <td>
+                      HP・LP&nbsp;&nbsp;&nbsp;<br
+                        class="only-sp"
+                      />作成、保守、修正
+                    </td>
+                  </tr>
+                  <tr>
+                    <th>作業可能時間</th>
+                    <td>
+                      AM 5:00〜7:00&nbsp;&nbsp;&nbsp;<br class="only-sp" />
+                      PM 10:00〜12:00
+                    </td>
+                  </tr>
+                  <tr>
+                    <th>制作環境</th>
+                    <td>VS Code、Illustrator、Figma、PerfectPixel、GitHub、GitLab、Chatwork、Codex、Claude Code</td>
+                  </tr>
+                  <tr>
+                    <th>実務経験</th>
+                    <td>掲載外の実務案件も複数対応済み / AIを活用したコーディング補助</td>
+                  </tr>
+                </table>
+              </div>
+              <div class="about__button js-in-view fade-in-up">
+                <a href="./about/" class="btn__more-small">もっと見る →</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="works" id="works">
+        <div class="works__inner">
+          <div class="section__title works__title js-in-view fade-in-up">
+            <h2 class="title-en">WORKS</h2>
+            <p class="title-ja">制作実績</p>
+          </div>
+          <div class="works__wrap">
+            <div class="works__card works__card--1 js-in-view fade-in-up">
+              <div class="works__image">
+                <a href="https://imaniis-portfolio.com/demo/ravek/" target="_blank" rel="noopener noreferrer">
+                  <img src="./assets/img/demo-1.png" alt="デモサイト1" />
+                </a>
+              </div>
+              <div class="works__text">
+                <h2 class="works__text-title">ravekサイト【仮想】</h2>
+                <p class="works__detail">
+                  パーフェクトピクセルを使い、デザインカンプと完全一致で完成させました。<br /><br />制作期間：3週間
+                </p>
+              </div>
+            </div>
+            <div class="works__card works__card--2 js-in-view fade-in-up">
+              <div class="works__image">
+                <a href="https://imaniis-portfolio.com/demo/GardenSalad/" target="_blank" rel="noopener noreferrer">
+                  <img src="./assets/img/demo-2.png" alt="デモサイト2" />
+                </a>
+              </div>
+              <div class="works__text">
+                <h2 class="works__text-title">表参道カフェ風LP【仮想】</h2>
+                <p class="works__detail">
+                  パララックスのアニメーションにこだわりました。<br /><br />制作期間：4週間
+                </p>
+              </div>
+            </div>
+            <div class="works__card works__card--3 js-in-view fade-in-up">
+              <div class="works__image">
+                <a href="https://imaniis-portfolio.com/demo/trainingGym/" target="_blank" rel="noopener noreferrer">
+                  <img src="./assets/img/demo-3.png" alt="デモサイト3" />
+                </a>
+              </div>
+              <div class="works__text">
+                <h2 class="works__text-title">
+                  Personal Training Gym<br />風LP【仮想】
+                </h2>
+                <p class="works__detail">
+                  １文字１文字のレタースペーシングにこだわり、デザインカンプに限りなく寄せました。<br /><br />制作期間：3週間
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="works__button js-in-view fade-in-up">
+            <a href="./works/" class="btn__more-small">もっと見る →</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="price" id="price">
+        <div class="price__inner">
+          <div class="section__title price__title js-in-view fade-in-up">
+            <h2 class="title-en">PRICE</h2>
+            <p class="title-ja">料金表</p>
+          </div>
+          <div class="price__table js-in-view fade-in-up">
+            <table>
+              <thead>
+                <tr>
+                  <th>作業内容</th>
+                  <th>料金目安</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>テキスト差し替え</td>
+                  <td>1,500円〜</td>
+                </tr>
+                <tr>
+                  <td>リンク先変更</td>
+                  <td>1,000円〜</td>
+                </tr>
+                <tr>
+                  <td>ボタン追加</td>
+                  <td>3,000円〜</td>
+                </tr>
+                <tr>
+                  <td>アニメーション追加</td>
+                  <td>8,000円〜</td>
+                </tr>
+                <tr>
+                  <td>TOPページ・LP制作</td>
+                  <td>30,000円〜</td>
+                </tr>
+                <tr>
+                  <td>下層ページ制作（1ページ）</td>
+                  <td>10,000円〜</td>
+                </tr>
+                <tr>
+                  <td>WordPress</td>
+                  <td>20,000円〜</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <ul class="price__text js-in-view fade-in-up">
+            <li>
+              すべての制作物は、スマートフォン・タブレット等の各種端末に対応したレスポンシブ対応を実施いたします。
+            </li>
+            <li>
+              制作物をポートフォリオとして公開掲載にご承諾いただける場合、<span
+                >表示価格より割引を適用させていただきます。</span
+              >
+            </li>
+            <li>
+              本料金は、デザインカンプ（完成デザインデータ）をご用意いただいた場合を前提としております。デザインからの制作をご希望の場合は、外部デザイナーへ依頼するため、別途追加料金が発生する可能性がございます。
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="contact" id="contact">
+        <div class="contact__inner">
+          <a href="./contact/" class="contact__contact">
+            Contact <span>お問い合わせ</span></a
+          >
+          <a href="https://x.com/AZ3lVFQhfluqW78" target="_blank" rel="noopener noreferrer" class="contact__X">X <span>エックス</span></a>
+        </div>
+      </section>
+    </div>
+
+    <footer class="l-footer" role="contentinfo" aria-label="サイトフッター">
+      <div class="l-footer__inner">
+        <small class="l-footer__copy">
+          &copy; <span id="copy-year">2025</span> Imanii's Portfolio — All
+          rights reserved / Web Coder
+        </small>
+      </div>
+    </footer>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="./assets/js/main.js"></script>
+  </body>
+</html>

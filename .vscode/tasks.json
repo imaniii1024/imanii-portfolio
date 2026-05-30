@@ -1,0 +1,39 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "Sass: watch",
+      "type": "npm",
+      "script": "sass:watch",
+      "isBackground": true,
+      "problemMatcher": [],
+      "presentation": {
+        "reveal": "always",
+        "panel": "dedicated",
+        "clear": true
+      },
+      "group": {
+        "kind": "build",
+        "isDefault": true
+      }
+    },
+    {
+      "label": "Sass: build",
+      "type": "npm",
+      "script": "sass:build",
+      "problemMatcher": [],
+      "group": "build"
+    },
+    {
+      "label": "Local server",
+      "type": "npm",
+      "script": "serve",
+      "isBackground": true,
+      "problemMatcher": [],
+      "presentation": {
+        "reveal": "always",
+        "panel": "dedicated"
+      }
+    }
+  ]
+}

@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact | Imanii's Portfolio</title>
+    <link rel="icon" type="image/png" href="../assets/img/favicon.png" />
+    <link rel="apple-touch-icon" href="../assets/img/profile-icon.png" />
+    <link rel="stylesheet" href="../assets/css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@200..900&family=Quicksand:wght@300..700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <section class="l-header">
+      <div class="l-header__inner">
+        <div class="l-header__title-wrap">
+          <div class="l-header__logo">
+            <a href="../">
+              <img
+                src="../assets/img/profile-icon 2.png"
+                alt="サイトロゴ"
+              />
+            </a>
+          </div>
+          <div class="l-header__title">
+            <a href="../">Imanii's<br />Portfolio</a>
+          </div>
+        </div>
+
+        <nav class="l-header__nav only-pc">
+          <ul class="l-header__nav-list">
+            <li class="l-header__nav-item"><a href="../about/">About</a></li>
+            <li class="l-header__nav-item"><a href="../works/">Works</a></li>
+            <li class="l-header__nav-item"><a href="../#price">Price</a></li>
+            <div class="l-header__button">
+              <a href="./" class="btn__contact-small">Contact</a>
+            </div>
+          </ul>
+        </nav>
+      </div>
+    </section>
+
+    <div class="l-header__hamburger only-sp">
+      <button class="menu-trigger" id="menu03">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+
+    <div id="js-drawer-content" class="drawer-content">
+      <nav class="drawer-content__menu">
+        <a href="../about/" class="drawer-content__link">About</a>
+        <a href="../works/" class="drawer-content__link">Works</a>
+        <a href="./" class="drawer-content__link">Contact</a>
+        <a href="./" class="drawer-content__btn btn__contact-small">Contact</a>
+        <a href="https://x.com/AZ3lVFQhfluqW78" target="_blank" rel="noopener noreferrer" class="drawer-content__sns btn__contact-small--black"
+          >X <span>エックス</span></a
+        >
+      </nav>
+    </div>
+
+    <div class="l-main">
+      <section class="contact-page">
+        <div class="page__top">
+          <h1 class="page__top-en">Contact Us</h1>
+          <h3 class="page__top-ja">お問い合わせ</h3>
+        </div>
+        <div class="contact-page__inner">
+          <div class="contact-page__box js-in-view fade-in-up">
+            <p class="contact-page__text">
+              ご質問などは、下記のフォームよりお問い合わせください。
+            </p>
+            <form
+              class="contact-page__form"
+              id="contact-form"
+              action="https://formspree.io/f/mpqneppv"
+              method="POST"
+            >
+              <input
+                type="hidden"
+                name="_subject"
+                value="ポートフォリオサイトからのお問い合わせ"
+              />
+              <div class="contact-page__fields">
+                <div class="contact-page__field">
+                  <div class="form-field">
+                    <div class="form-field__head">
+                      <label for="your-name" class="form-field__label"
+                        >お名前</label
+                      >
+                      <span class="form-field__tag">必須</span>
+                    </div>
+                    <div class="form-field__item">
+                      <input
+                        type="text"
+                        name="name"
+                        id="your-name"
+                        placeholder="例 )  山田　花子"
+                        data-fs-field
+                        required
+                      />
+                    </div>
+                  </div>
+                </div>
+                <div class="contact-page__field">
+                  <div class="form-field">
+                    <div class="form-field__head">
+                      <label for="your-email" class="form-field__label"
+                        >メールアドレス</label
+                      >
+                      <span class="form-field__tag">必須</span>
+                    </div>
+                    <div class="form-field__item">
+                      <input
+                        type="email"
+                        name="email"
+                        id="your-email"
+                        placeholder="例 )  hanako-yamada@example.com"
+                        data-fs-field
+                        required
+                      />
+                    </div>
+                  </div>
+                </div>
+                <div class="contact-page__field">
+                  <div class="form-field">
+                    <div class="form-field__head">
+                      <label for="your-tel" class="form-field__label"
+                        >電話番号</label
+                      >
+                    </div>
+                    <div class="form-field__item">
+                      <input
+                        type="tel"
+                        name="tel"
+                        id="your-tel"
+                        placeholder="例 )  090-0000-0000"
+                        data-fs-field
+                      />
+                    </div>
+                  </div>
+                </div>
+                <div class="contact-page__field">
+                  <div class="form-field">
+                    <div class="form-field__head">
+                      <label for="your-message" class="form-field__label"
+                        >お問い合わせ内容</label
+                      >
+                      <span class="form-field__tag">必須</span>
+                    </div>
+                    <div class="form-field__item">
+                      <textarea
+                        name="message"
+                        id="your-message"
+                        cols="30"
+                        rows="10"
+                        placeholder="例 )  ご質問やお問い合わせ内容をご記入ください。"
+                        data-fs-field
+                        required
+                      ></textarea>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <p class="contact-page__status" id="contact-form-status" aria-live="polite"></p>
+              <div class="contact-page__button">
+                <button type="submit" class="contact-page__btn" data-fs-submit-btn>
+                  送信
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </section>
+
+      <section class="contact">
+        <div class="contact__inner">
+          <a href="./" class="contact__contact">
+            Contact <span>お問い合わせ</span></a
+          >
+          <a href="https://x.com/AZ3lVFQhfluqW78" target="_blank" rel="noopener noreferrer" class="contact__X">X <span>エックス</span></a>
+        </div>
+      </section>
+    </div>
+    <footer class="l-footer" role="contentinfo" aria-label="サイトフッター">
+      <div class="l-footer__inner">
+        <small class="l-footer__copy">
+          &copy; <span id="copy-year">2025</span> Imanii's Portfolio — All
+          rights reserved / Web Coder
+        </small>
+      </div>
+    </footer>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="../assets/js/main.js"></script>
+  </body>
+</html>
