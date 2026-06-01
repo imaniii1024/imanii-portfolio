@@ -1350,7 +1350,7 @@ a {
   background: #ffffff;
   border: 1px solid #1fbbe7;
   border-radius: 10px;
-  color: #bdbdbd;
+  color: #2d2d32;
   font-family: "Noto Serif JP", serif;
   font-size: 16px;
   height: 160px;
@@ -1358,6 +1358,10 @@ a {
   padding-right: 13px;
   padding-top: 13px;
   width: 100%;
+}
+
+.contact-page .form-field__item textarea::placeholder {
+  color: #bdbdbd;
 }
 
 .works-page {
