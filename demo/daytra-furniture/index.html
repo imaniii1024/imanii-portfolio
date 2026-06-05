@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="家具・家電レンタルサービス Rich-Life の家具・家電販売風LPです。"
+    />
+    <title>Rich-Life | 家具・家電レンタル</title>
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Jost:wght@400;500;600;700&family=Noto+Sans+JP:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header class="l-header">
+      <div class="l-header__inner">
+        <a href="#" class="l-header__logo" aria-label="Rich-Life トップ">
+          <img src="./assets/img/logo.png" alt="Rich-Life" />
+        </a>
+        <nav class="l-header__nav" aria-label="グローバルナビゲーション">
+          <button class="l-header__nav-button" type="button" data-menu-trigger="furniture">
+            <span>家具</span>
+            <svg viewBox="0 0 16 16" aria-hidden="true">
+              <path d="M4.1824 8.236L0.182403 1.836C0.0688736 1.65435 0.00603596 1.44563 0.000413532 1.2315C-0.00520889 1.01736 0.0465889 0.805631 0.150429 0.618277C0.25427 0.430924 0.406367 0.27478 0.590931 0.166058C0.775495 0.0573365 0.985797 -5.05201e-07 1.2 3.33884e-12L9.2 3.33884e-12C9.41421 -5.05201e-07 9.62451 0.0573365 9.80907 0.166058C9.99364 0.27478 10.1457 0.430924 10.2496 0.618277C10.3534 0.805631 10.4052 1.01736 10.3996 1.2315C10.394 1.44563 10.3311 1.65435 10.2176 1.836L6.2176 8.236C6.10973 8.40859 5.95974 8.55091 5.78173 8.64957C5.60371 8.74824 5.40353 8.8 5.2 8.8C4.99648 8.8 4.79629 8.74824 4.61828 8.64957C4.44027 8.55091 4.29027 8.40859 4.1824 8.236Z" />
+            </svg>
+          </button>
+          <button class="l-header__nav-button" type="button" data-menu-trigger="appliance">
+            <span>家電</span>
+            <svg viewBox="0 0 16 16" aria-hidden="true">
+              <path d="M4.1824 8.236L0.182403 1.836C0.0688736 1.65435 0.00603596 1.44563 0.000413532 1.2315C-0.00520889 1.01736 0.0465889 0.805631 0.150429 0.618277C0.25427 0.430924 0.406367 0.27478 0.590931 0.166058C0.775495 0.0573365 0.985797 -5.05201e-07 1.2 3.33884e-12L9.2 3.33884e-12C9.41421 -5.05201e-07 9.62451 0.0573365 9.80907 0.166058C9.99364 0.27478 10.1457 0.430924 10.2496 0.618277C10.3534 0.805631 10.4052 1.01736 10.3996 1.2315C10.394 1.44563 10.3311 1.65435 10.2176 1.836L6.2176 8.236C6.10973 8.40859 5.95974 8.55091 5.78173 8.64957C5.60371 8.74824 5.40353 8.8 5.2 8.8C4.99648 8.8 4.79629 8.74824 4.61828 8.64957C4.44027 8.55091 4.29027 8.40859 4.1824 8.236Z" />
+            </svg>
+          </button>
+          <a href="#business">法人のお客様へ</a>
+          <a href="#login" class="c-button c-button--outline">ログイン/会員登録</a>
+          <a href="#cart" class="l-header__cart" aria-label="カート">
+            <svg viewBox="0 0 32 32" aria-hidden="true">
+              <path d="M1.6 0C1.17565 0 0.768687 0.168571 0.468629 0.468629C0.168571 0.768687 0 1.17565 0 1.6C0 2.02435 0.168571 2.43131 0.468629 2.73137C0.768687 3.03143 1.17565 3.2 1.6 3.2L3.552 3.2L4.04 5.1552C4.04485 5.17771 4.05018 5.20012 4.056 5.2224L6.2288 13.9104L4.8 15.3376C2.784 17.3536 4.2112 20.8 7.0624 20.8L20.8 20.8C21.2243 20.8 21.6313 20.6314 21.9314 20.3314C22.2314 20.0313 22.4 19.6243 22.4 19.2C22.4 18.7757 22.2314 18.3687 21.9314 18.0686C21.6313 17.7686 21.2243 17.6 20.8 17.6L7.0624 17.6L8.6624 16L19.2 16C19.4971 15.9998 19.7882 15.917 20.0408 15.7607C20.2935 15.6044 20.4976 15.3809 20.6304 15.1152L25.4304 5.5152C25.5523 5.27133 25.6098 5.00036 25.5975 4.72801C25.5853 4.45566 25.5036 4.19096 25.3603 3.95903C25.217 3.7271 25.0168 3.53563 24.7788 3.40279C24.5407 3.26995 24.2726 3.20015 24 3.2L6.848 3.2L6.352 1.2112C6.26533 0.865205 6.06552 0.558094 5.78433 0.338649C5.50314 0.119203 5.15669 0.000009 4.8 0L1.6 0ZM22.4 24.8C22.4 25.4365 22.1471 26.047 21.6971 26.4971C21.247 26.9471 20.6365 27.2 20 27.2C19.3635 27.2 18.753 26.9471 18.3029 26.4971C17.8529 26.047 17.6 25.4365 17.6 24.8C17.6 24.1635 17.8529 23.553 18.3029 23.1029C18.753 22.6529 19.3635 22.4 20 22.4C20.6365 22.4 21.247 22.6529 21.6971 23.1029C22.1471 23.553 22.4 24.1635 22.4 24.8ZM7.2 27.2C7.83652 27.2 8.44697 26.9471 8.89706 26.4971C9.34714 26.047 9.6 25.4365 9.6 24.8C9.6 24.1635 9.34714 23.553 8.89706 23.1029C8.44697 22.6529 7.83652 22.4 7.2 22.4C6.56348 22.4 5.95303 22.6529 5.50294 23.1029C5.05286 23.553 4.8 24.1635 4.8 24.8C4.8 25.4365 5.05286 26.047 5.50294 26.4971C5.95303 26.9471 6.56348 27.2 7.2 27.2Z" />
+            </svg>
+          </a>
+        </nav>
+        <button class="l-header__drawer-button" type="button" aria-label="メニューを開く">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+      <div class="c-menu-panel" data-menu-panel="furniture">
+        <p class="c-menu-panel__title">家具</p>
+        <div class="c-menu-panel__grid">
+          <a class="c-menu-panel__link" href="#">すべて</a>
+          <a class="c-menu-panel__link" href="#">ソファ</a>
+          <a class="c-menu-panel__link" href="#">ベッド・寝具</a>
+          <a class="c-menu-panel__link" href="#">チェア</a>
+          <a class="c-menu-panel__link" href="#">ダイニング</a>
+          <a class="c-menu-panel__link" href="#">デスク</a>
+          <a class="c-menu-panel__link" href="#">収納用品・ケース</a>
+          <a class="c-menu-panel__link" href="#">テレビ台</a>
+          <a class="c-menu-panel__link" href="#">照明</a>
+          <a class="c-menu-panel__link" href="#">カーテン</a>
+          <a class="c-menu-panel__link" href="#">観葉植物</a>
+          <a class="c-menu-panel__link" href="#">その他家具</a>
+        </div>
+      </div>
+      <div class="c-menu-panel" data-menu-panel="appliance">
+        <p class="c-menu-panel__title">家電</p>
+        <div class="c-menu-panel__grid">
+          <a class="c-menu-panel__link" href="#">すべて</a>
+          <a class="c-menu-panel__link" href="#">洗濯機</a>
+          <a class="c-menu-panel__link" href="#">冷蔵庫</a>
+          <a class="c-menu-panel__link" href="#">電子レンジ</a>
+          <a class="c-menu-panel__link" href="#">テレビ</a>
+          <a class="c-menu-panel__link" href="#">AV機器</a>
+          <a class="c-menu-panel__link" href="#">空調</a>
+          <a class="c-menu-panel__link" href="#">美容</a>
+          <a class="c-menu-panel__link" href="#">その他家電</a>
+        </div>
+      </div>
+      <nav class="l-drawer" aria-label="スマートフォンナビゲーション">
+        <button class="l-drawer__close" type="button" aria-label="メニューを閉じる">×</button>
+        <a href="#">家具</a>
+        <a href="#">すべて</a>
+        <a href="#">ソファ</a>
+        <a href="#">ベッド・寝具</a>
+        <a href="#">チェア</a>
+        <a href="#">ダイニング</a>
+        <a href="#">デスク</a>
+        <a href="#">収納用品・ケース</a>
+        <a href="#">テレビ台</a>
+        <a href="#">照明</a>
+        <a href="#">観葉植物</a>
+        <a href="#">その他家具</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="p-hero">
+        <div class="p-hero__inner">
+          <h1 class="p-hero__title">
+            <span>いつでもどこでも。</span>
+            <span class="p-hero__title-pc">わたしの好きが集まる暮らし。</span>
+            <span class="p-hero__title-sp">わたしの好きが集まる</span>
+            <span class="p-hero__title-sp">暮らし。</span>
+          </h1>
+          <p class="p-hero__lead">おうち空間を自由かつ手軽に模様替え</p>
+        </div>
+      </section>
+
+      <section class="p-cta" id="login">
+        <div class="p-cta__inner">
+          <p class="p-cta__badge">今だけ</p>
+          <p class="p-cta__copy">高品質でセンスのいい家具・家電を</p>
+          <p class="p-cta__strong"><span>10%OFF価格で</span><span>レンタルできます。</span></p>
+          <ul class="p-cta__features">
+            <li>月額440円〜</li>
+            <li>1ヶ月〜レンタル可能</li>
+            <li>長期レンタル割引あり</li>
+          </ul>
+          <div class="p-cta__buttons">
+            <a class="c-button c-button--dark" href="#">カンタン！ 3 STEP</a>
+            <a class="c-button" href="#">今すぐ会員登録</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="p-benefit">
+        <div class="l-inner">
+          <div class="c-section-title">
+            <h2 class="c-section-title__ja">Rich-Lifeがお約束する、<br class="only-sp" />5つの暮らし</h2>
+            <p class="c-section-title__en">REALIZATION</p>
+          </div>
+          <div class="p-benefit__list">
+            <article class="p-benefit__item">
+              <p class="p-benefit__num">reason 01</p>
+              <img src="./assets/img/image.png" alt="" />
+              <h3>交換・返却費が無料で「今」最適な空間を選べる</h3>
+            </article>
+            <article class="p-benefit__item">
+              <p class="p-benefit__num">reason 02</p>
+              <img src="./assets/img/image-2.png" alt="" />
+              <h3>初期コスト抑え、気軽に質の良い空間を手に入れられる</h3>
+            </article>
+            <article class="p-benefit__item">
+              <p class="p-benefit__num">reason 03</p>
+              <img src="./assets/img/image-3.png" alt="" />
+              <h3>モノを持たずに引っ越しや模様替えを楽しめる</h3>
+            </article>
+            <article class="p-benefit__item">
+              <p class="p-benefit__num">reason 04</p>
+              <img src="./assets/img/image-4.png" alt="" />
+              <h3>モノをなるべく捨てない、環境に優しい暮らし</h3>
+            </article>
+            <article class="p-benefit__item">
+              <p class="p-benefit__num">reason 05</p>
+              <img src="./assets/img/image-5.png" alt="" />
+              <h3>本当に好きなモノに<br />囲まれる<br />豊かな暮らし</h3>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="p-authority">
+        <div class="p-authority__inner">
+          <img class="p-authority__leaf" src="./assets/img/leaf-left.png" alt="" />
+          <div class="p-authority__text">
+            <p>おかげさまでRich-Life USER 総会員数</p>
+            <strong>16万人突破!</strong>
+          </div>
+          <img class="p-authority__leaf" src="./assets/img/leaf-right.png" alt="" />
+        </div>
+      </section>
+
+      <section class="p-voice">
+        <div class="l-inner">
+          <div class="c-section-title">
+            <h2 class="c-section-title__ja">利用者さまの声</h2>
+            <p class="c-section-title__en">VOICE</p>
+          </div>
+          <div class="p-voice__cards">
+            <article class="p-voice-card">
+              <p class="p-voice-card__label">REVIEW 01</p>
+              <img src="./assets/img/image-6.png" alt="部屋の写真" />
+              <div class="p-voice-card__body">
+                <h3><span>センスのいい家具で</span><span>ワンランク上のお部屋に</span></h3>
+                <p>必要なときにだけ借りることができるコンセプトに魅力を感じて利用。<br />レンタルできる家具はどれもセンスが良いので、ハズレがありません。そしてRich-Lifeの家具をお迎えしたことで、いつものおうち空間がワンランク上の部屋になって本当にうれしいです。<br />今ではシーズンごとに家具のテイストを変えるのが楽しみになっています。</p>
+                <span>20代女性・XXXX子さん</span>
+              </div>
+            </article>
+            <article class="p-voice-card">
+              <p class="p-voice-card__label">REVIEW 02</p>
+              <img src="./assets/img/image-7.png" alt="部屋の写真" />
+              <div class="p-voice-card__body">
+                <h3><span>家具家電を汚した時の</span><span>レンタル保証がうれしい。</span></h3>
+                <p>家具のレンタルに興味はあったものの、小さい子どもがいるので家具・家電を汚してしまった時のことが心配でなかなか踏み切れずにいました。ですがRich-Lifeは家具を汚したときの保証があるので安心して利用できています。以前子供がソファーに飲み物をこぼしてしまったのですが無料で交換してくれてとても助かりました。</p>
+                <span>30代女性・XXXX子さん</span>
+              </div>
+            </article>
+            <article class="p-voice-card">
+              <p class="p-voice-card__label">REVIEW 03</p>
+              <img src="./assets/img/image-8.png" alt="部屋の写真" />
+              <div class="p-voice-card__body">
+                <h3><span>本当に好きなモノに囲まれる</span><span>豊かな暮らしを。</span></h3>
+                <p>子どもが巣立ち、これからは必要最小限でかつ品質の良いお気に入りのモノたちに囲まれた生活をしたいと思っていました。でもいきなり購入するのは気が引ける、と思っていたところこちらのサービスを見つけました。月額440円〜利用できますので色々試しながらこれからの自分たちに合った家具・家電を探しています。</p>
+                <span>50代女性・XXXX子さん</span>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="p-solution">
+        <div class="l-inner">
+          <div class="c-section-title">
+            <h2 class="c-section-title__ja">こんなことでお悩みではないですか？</h2>
+            <p class="c-section-title__en">SOLUTION</p>
+          </div>
+          <ul class="p-solution__list">
+            <li>しっくりくる家具を選びたい。でもいきなり買うのは自信がない</li>
+            <li>引っ越しのたびに物を持っていることが大きな負担である。</li>
+            <li>きちんとした家具を使いたいけど、予算的に負担が大きい</li>
+            <li>新しい商品が出たら買い換えたい</li>
+            <li>模様替えをもっと楽しみたい</li>
+            <li>モノを捨てない、環境に優しい暮らしを楽しみながらしたい</li>
+          </ul>
+          <p class="p-solution__answer">Rich-Lifeの家具・家電レンタルサービスはそんな理想の暮らしをご提供いたします。</p>
+        </div>
+      </section>
+
+      <section class="p-scenes">
+        <div class="l-inner">
+          <div class="c-section-title">
+            <h2 class="c-section-title__ja">Rich-Lifeで叶える、<br class="only-sp" />理想の暮らし紹介</h2>
+            <p class="c-section-title__en">REALIZATION</p>
+          </div>
+          <article class="p-scene">
+            <p class="p-scene__num">SCENE 01</p>
+            <img class="p-scene__main" src="./assets/img/main.png" alt="ソファのあるリビング" />
+            <div class="p-scene__content">
+              <div class="p-scene__text">
+                <h3>「スキ」なものを<br class="only-sp" />際立たせた空間作りを。</h3>
+                <h4>STYLE POINT</h4>
+                <p>ソファの足元にオットマンを配置すれば、カウチスタイルの出来上がり。<br />アームレスの特徴を活かして左右どちらにでも足を降ろしやすいので、楽な姿勢を見つけてみて。</p>
+                <img class="p-scene__inline-photo only-sp" src="./assets/img/man.png" alt="" />
+                <h4>ONE POINT ADVICE</h4>
+                <p>モバイルプロジェクターをサイドテーブルに置いて、足を伸ばした状態でゆったりと映画を楽しむのはどうでしょう。Rich-Lifeではターンテーブルやスピーカーなどの音楽 家電も取り扱っています。</p>
+                <img class="p-scene__inline-photo only-sp" src="./assets/img/projector.png" alt="" />
+              </div>
+              <div class="p-scene__photos">
+                <img src="./assets/img/man.png" alt="" />
+                <img src="./assets/img/projector.png" alt="" />
+              </div>
+            </div>
+            <div class="p-lineup">
+              <h3>使用している家具・家電<span>LINE UP</span></h3>
+              <div class="p-lineup__cards">
+                <article class="c-card">
+                  <img src="./assets/img/speaker.png" alt="" />
+                  <div class="c-card__body"><h4 class="c-card__title">House of Speaker</h4><p class="c-card__text">Rich Black</p></div>
+                </article>
+                <article class="c-card">
+                  <img src="./assets/img/projector-2.png" alt="" />
+                  <div class="c-card__body"><h4 class="c-card__title">Mobile Projector</h4><p class="c-card__text">Silver</p></div>
+                </article>
+                <article class="c-card">
+                  <img src="./assets/img/roomsofa.png" alt="" />
+                  <div class="c-card__body"><h4 class="c-card__title">Couch Sofa</h4><p class="c-card__text">1P</p></div>
+                </article>
+              </div>
+            </div>
+          </article>
+
+          <article class="p-scene p-scene--reverse">
+            <p class="p-scene__num">SCENE 02</p>
+            <img class="p-scene__main" src="./assets/img/main-2.png" alt="季節感のあるリビング" />
+            <div class="p-scene__content">
+              <div class="p-scene__photos">
+                <img src="./assets/img/room-left.png" alt="" />
+                <img src="./assets/img/room-right.png" alt="" />
+              </div>
+              <div class="p-scene__text">
+                <h3>季節にあった彩りを<br class="only-sp" />手軽に楽しむ。</h3>
+                <h4>STYLE POINT</h4>
+                <p>ソファの上のクッションや壁面のフレーム、ソファ横の1人掛けの椅子などをベージュ〜ブラウンのアースカラーで統一。一方で碧編の白をワゴンの上に置くことで調和をとり、全体的に落ち着いた雰囲気に。</p>
+                <img class="p-scene__inline-photo only-sp" src="./assets/img/room-left.png" alt="" />
+                <h4>ONE POINT ADVICE</h4>
+                <p>お部屋のコーディネートをまとめるコツの一つとして、<br />同系色を散らして使うテクニックがあります。寒い冬の日でもどこかあたたかさと落ち着きを感じさせるベージュ〜ブラウンのアースカラーを試してみては？</p>
+                <img class="p-scene__inline-photo only-sp" src="./assets/img/room-right.png" alt="" />
+              </div>
+            </div>
+            <div class="p-lineup">
+              <h3>使用している家具・家電<span>LINE UP</span></h3>
+              <div class="p-lineup__cards">
+                <article class="c-card">
+                  <img src="./assets/img/sofa.png" alt="" />
+                  <div class="c-card__body"><h4 class="c-card__title">Low Sofa</h4><p class="c-card__text">ローソファ</p></div>
+                </article>
+                <article class="c-card">
+                  <img src="./assets/img/table.png" alt="" />
+                  <div class="c-card__body"><h4 class="c-card__title">Mini Table</h4><p class="c-card__text">直径45cm</p></div>
+                </article>
+                <article class="c-card">
+                  <img src="./assets/img/chair.png" alt="" />
+                  <div class="c-card__body"><h4 class="c-card__title">Single Sofa</h4><p class="c-card__text">一人掛けソファ</p></div>
+                </article>
+              </div>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="p-cta">
+        <div class="p-cta__inner">
+          <p class="p-cta__badge">今だけ</p>
+          <p class="p-cta__copy">高品質でセンスのいい家具・家電を</p>
+          <p class="p-cta__strong"><span>10%OFF価格で</span><span>レンタルできます。</span></p>
+          <ul class="p-cta__features">
+            <li>月額440円〜</li>
+            <li>1ヶ月〜レンタル可能</li>
+            <li>長期レンタル割引あり</li>
+          </ul>
+          <div class="p-cta__buttons">
+            <a class="c-button c-button--dark" href="#">カンタン！ 3 STEP</a>
+            <a class="c-button" href="#">今すぐ会員登録</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="p-feature">
+        <div class="l-inner">
+          <div class="c-section-title">
+            <h2 class="c-section-title__ja">Rich-Lifeが愛される<br class="only-sp" />4つのポイント</h2>
+            <p class="c-section-title__en">FEATURES</p>
+          </div>
+          <div class="p-feature__list">
+            <article class="p-feature__item">
+              <img src="./assets/img/desk-chair.png" alt="" />
+              <div><p>point 01</p><h3>交換・返却が自由でカンタン</h3><span>自分の生活に最適なものを使うために時間や労力をかけて選んだにも関わらず、「思っていたのと違う」と後悔した経験はありませんか？Rich-Lifeでは家具・家電のレンタルができますので取捨選択にかける時間を大幅にカットできます。また実際に使用してみて、自分に合わないと思ったらすぐに交換・返却ができるので、手軽さゆえの心の余裕が生まれるのもポイント。</span></div>
+            </article>
+            <article class="p-feature__item">
+              <img src="./assets/img/subscription.png" alt="" />
+              <div><p>point 02</p><h3>月額定額制で返却期限なし</h3><span>1ヶ月という短期間からのレンタルが可能ですので、自分により合う家具・家電を色々試せる手軽さが最大の特徴。また、月額定額制なので費用管理がしやすいのもポイント。</span></div>
+            </article>
+            <article class="p-feature__item">
+              <img src="./assets/img/desk-chair.png" alt="" />
+              <div><p>point 03</p><h3>きちんとした品質でセンスのいいものだけをセレクト</h3><span>きちんとしたモノは自分の生活の質を向上させてくれます。生活の質は心の余裕にも繋がりますので、それが自然と自分の気持ちをも高めてくれる好循環が生まれます。またきちんとした品質でかつセンスのいいものだけを取り揃えておりますので家具・家電の善し悪しが分からないという人でも失敗が少ないのも嬉しいポイントです。</span></div>
+            </article>
+            <article class="p-feature__item">
+              <img src="./assets/img/family.png" alt="" />
+              <div><p>point 04</p><h3>ライフステージの変化に対応</h3><span>年齢が上がるにつれてライフステージは変遷していくもの。それと同時に、そのときの暮らしにあった家具・家電のスペックが変わりますので、購入するとなると生活スタイルが変わるたびに家具・家電の入れ替えを迫られるなんてことも。でもRich-Lifeはレンタル品なので、先の心配をすることなく「今の自分に必要なモノだけ」を置いておける気楽さを手に入れられます。また、まだまだ使えるモノを廃棄するという手間や罪悪感をも払拭してくれます。</span></div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="p-howto">
+        <div class="l-inner">
+          <div class="c-section-title">
+            <h2 class="c-section-title__ja">気軽に簡単に<br class="only-sp" />Rich-Lifeの使い方</h2>
+            <p class="c-section-title__en">HOW TO USE</p>
+          </div>
+          <div class="p-howto__list">
+            <article><img src="./assets/img/search.png" alt="" /><h3><span>01</span>ネットで注文</h3><p>スマホやパソコンから、商品と配送希望日を選んで、注文</p></article>
+            <article><img src="./assets/img/moving.png" alt="" /><h3><span>02</span>配送・設置</h3><p>専門業者がご自宅までお届け。商品の搬入は全ておまかせ</p></article>
+            <article><img src="./assets/img/chair-2.png" alt="" /><h3><span>03</span>ご利用</h3><p>購入した商品と同じように普段の生活でご利用いただけます</p></article>
+            <article><img src="./assets/img/room.png" alt="" /><h3><span>04</span>交換・返送</h3><p>交換や返却の際も、搬出は専門業者に全ておまかせ</p></article>
+          </div>
+        </div>
+      </section>
+
+      <section class="p-cta">
+        <div class="p-cta__inner">
+          <p class="p-cta__badge">今だけ</p>
+          <p class="p-cta__copy">高品質でセンスのいい家具・家電を</p>
+          <p class="p-cta__strong"><span>10%OFF価格で</span><span>レンタルできます。</span></p>
+          <ul class="p-cta__features">
+            <li>月額440円〜</li>
+            <li>1ヶ月〜レンタル可能</li>
+            <li>長期レンタル割引あり</li>
+          </ul>
+          <div class="p-cta__buttons">
+            <a class="c-button c-button--dark" href="#">カンタン！ 3 STEP</a>
+            <a class="c-button" href="#">今すぐ会員登録</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="p-faq">
+        <div class="l-inner">
+          <div class="c-section-title">
+            <h2 class="c-section-title__ja">よくある質問</h2>
+            <p class="c-section-title__en">FAQ</p>
+          </div>
+          <div class="c-accordion">
+            <div class="c-accordion__item">
+              <button class="c-accordion__button" type="button">Rich-Lifeはどんなサービスですか？</button>
+              <div class="c-accordion__body">Rich-Lifeは必要なときに必要なものだけを使える家具・家電のレンタルサービスです。</div>
+            </div>
+            <div class="c-accordion__item">
+              <button class="c-accordion__button" type="button">レンタル期間は選べますか？</button>
+              <div class="c-accordion__body">1ヶ月から選択可能です。更新手続きは毎月自動で行います。</div>
+            </div>
+            <div class="c-accordion__item">
+              <button class="c-accordion__button" type="button">注文してから届くまでどのくらい期間がかかりますか？</button>
+              <div class="c-accordion__body">商品とお住まいの地域によりますが、約1週間ほどでお届けします。</div>
+            </div>
+            <div class="c-accordion__item">
+              <button class="c-accordion__button" type="button">商品の交換は可能ですか？</button>
+              <div class="c-accordion__body">可能です。マイページより交換申請手続きをお願いします。</div>
+            </div>
+            <div class="c-accordion__item">
+              <button class="c-accordion__button" type="button">申込の仕方を教えてください。</button>
+              <div class="c-accordion__body">商品を選択し、配送希望日と注文情報を入力してお申し込みください。</div>
+            </div>
+          </div>
+          <div class="p-faq__button"><a class="c-button" href="#">よくある質問を見る</a></div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="l-footer">
+      <div class="l-inner l-footer__inner">
+        <div class="l-footer__navs">
+          <nav><h2>SERVICE</h2><a href="#">すべて</a><a href="#">家具</a><a href="#">家電</a><a href="#">お知らせ</a><a href="#">商品の魅力・選び方記事</a></nav>
+          <nav><h2>ABOUT</h2><a href="#">会社概要</a><a href="#">採用情報</a></nav>
+          <nav><h2>SUPPORT</h2><a href="#">よくある質問</a><a href="#">お問い合わせ(個人のお客様)</a><a href="#">プライバシー</a><a href="#">利用規約</a><a href="#">法人会員向け利用規約</a><a href="#">特定商取引法に基づく表記</a></nav>
+          <nav><h2>CLAS BUSINESS</h2><a href="#">法人向けサービスについて</a><a href="#">手軽にためす</a><a href="#">まとめておまかせ</a><a href="#">導入事例</a></nav>
+        </div>
+        <div class="l-footer__sns">
+          <a href="#" aria-label="Instagram"><img src="./assets/img/icon-instagram.svg" alt="" /></a>
+          <a href="#" aria-label="X"><img src="./assets/img/icon-twitter.svg" alt="" /></a>
+          <a href="#" aria-label="Facebook"><img src="./assets/img/icon-facebook.svg" alt="" /></a>
+        </div>
+        <p class="l-footer__note">本サイト内は株式会社CLAS様のご協力のもと作成したコーディング用の練習課題です。実在の人物・団体とは関係ありません。</p>
+        <p class="l-footer__copy">© 2022 Rich-Life Inc.</p>
+      </div>
+    </footer>
+
+    <script src="./assets/js/main.js"></script>
+  </body>
+</html>
