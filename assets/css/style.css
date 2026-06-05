@@ -1528,11 +1528,18 @@ a {
   position: relative;
 }
 
+.works-page .works-page__grid-card > a {
+  color: inherit;
+  display: block;
+  text-decoration: none;
+}
+
 .works-page .works-page__grid-card > a::after {
   content: "";
   cursor: pointer;
   inset: 0;
   position: absolute;
+  z-index: 3;
 }
 
 .works-page .works-page__grid-card--lp .grid-card__badge svg text {
