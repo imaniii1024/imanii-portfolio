@@ -999,6 +999,13 @@ a {
   overflow: hidden;
 }
 
+.works .works__card-link {
+  color: inherit;
+  display: block;
+  height: 100%;
+  text-decoration: none;
+}
+
 .works .works__card--3 .works__text {
   padding-top: 20px;
 }
@@ -1020,7 +1027,8 @@ a {
   transition: transform 0.3s ease;
 }
 
-.works .works__image:hover img {
+.works .works__image:hover img,
+.works .works__card-link:hover .works__image img {
   transform: scale(1.1);
 }
 
@@ -1518,6 +1526,13 @@ a {
   padding: 10px;
   padding-bottom: 25px;
   position: relative;
+}
+
+.works-page .works-page__grid-card > a::after {
+  content: "";
+  cursor: pointer;
+  inset: 0;
+  position: absolute;
 }
 
 .works-page .works-page__grid-card--lp .grid-card__badge svg text {
