@@ -1,0 +1,813 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="robots" content="noindex" />
+    <title>Open Cafe</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Damion&family=Noto+Serif+JP:wght@200..900&family=Patua+One&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <div class="top-body">
+      <header class="header">
+        <div class="header-inner">
+          <div class="header__picture-container">
+            <div class="header__swiper">
+              <!-- Slider main container -->
+              <div class="swiper header__swiper">
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper">
+                  <!-- Slides -->
+                  <div class="swiper-slide header__slider">
+                    <div class="header-swiper__card">
+                      <picture class="header-swiper__card-image">
+                        <source
+                          media="(min-width: 900px)"
+                          srcset="./img/pc/top-swiper-1.jpg"
+                        />
+                        <img src="./img/sp/top-swiper-1.jpg" alt="" />
+                      </picture>
+                    </div>
+                  </div>
+                  <div class="swiper-slide header__slider">
+                    <div class="header-swiper__card">
+                      <picture class="header-swiper__card-image">
+                        <source
+                          media="(min-width: 900px)"
+                          srcset="./img/pc/top-swiper-2.jpg"
+                        />
+                        <img src="./img/sp/top-swiper-2.jpg" alt="" />
+                      </picture>
+                    </div>
+                  </div>
+                  <div class="swiper-slide header__slider">
+                    <div class="header-swiper__card">
+                      <picture class="header-swiper__card-image">
+                        <source
+                          media="(min-width: 900px)"
+                          srcset="./img/pc/top-swiper-3.jpg"
+                        />
+                        <img src="./img/sp/top-swiper-3.jpg" alt="" />
+                      </picture>
+                    </div>
+                  </div>
+                  <picture class="picture__shadow hidden__sp">
+                    <source
+                      media="(min-width: 900px)"
+                      srcset="./img/pc/top-swiper-shadow.png"
+                    />
+                    <img src="./img/pc/top-swiper-shadow.png" alt="" />
+                  </picture>
+                </div>
+                <!-- If we need pagination -->
+                <div class="swiper-pagination"></div>
+              </div>
+            </div>
+            <!-- <picture class="picture__shadow hidden__sp">
+              <source
+                media="(min-width: 900px)"
+                srcset="./img/pc/top-swiper-shadow.png"
+              />
+              <img src="./img/pc/top-swiper-shadow.png" alt="" />
+            </picture> -->
+          </div>
+          <div class="header__top">
+            <h1 class="header__logo-left">
+              <a href="./">
+                <picture>
+                  <source
+                    media="(min-width: 900px)"
+                    srcset="./img/pc/header-logo.png"
+                  />
+                  <img src="./img/sp/logo_light.png" alt="" />
+                </picture>
+              </a>
+            </h1>
+            <div class="header__nav-menu-wrapper hidden__sp">
+              <nav class="header__menu-menu">
+
+                <ul class="nav-menu__lists">
+                  <li class="nav-menu__item">
+                    <a href="./" class="nav-menu__link">
+                      <span class="nav-link__line-en">TOP</span>
+                      <span class="nav-link__line-ja">トップ</span>
+                    </a>
+                  </li>
+                  <li class="nav-menu__item">
+                    <a href="#" class="nav-menu__link">
+                      <span class="nav-link__line-en">CONCEPT</span>
+                      <span class="nav-link__line-ja">コンセプト</span>
+                    </a>
+                  </li>
+                  <li class="nav-menu__item">
+                    <a href="#" class="nav-menu__link">
+                      <span class="nav-link__line-en">MENU</span>
+                      <span class="nav-link__line-ja">メニュー</span>
+                    </a>
+                  </li>
+                  <li class="nav-menu__item">
+                    <a href="#" class="nav-menu__link">
+                      <span class="nav-link__line-en">NEWS</span>
+                      <span class="nav-link__line-ja">お知らせ</span>
+                    </a>
+                  </li>
+                  <li class="nav-menu__item">
+                    <a href="#" class="nav-menu__link">
+                      <span class="nav-link__line-en">SHOP</span>
+                      <span class="nav-link__line-ja">店舗情報</span>
+                    </a>
+                  </li>
+                  <li class="nav-menu__item">
+                    <a href="#" class="nav-menu__link">
+                      <span class="nav-link__line-en">GIFT</span>
+                      <span class="nav-link__line-ja">ギフト・贈り物</span>
+                    </a>
+                  </li>
+                  <li class="nav-menu__item">
+                    <a href="#" class="nav-menu__link">
+                      <span class="nav-link__line-en">CONTACT</span>
+                      <span class="nav-link__line-ja">お問い合わせ</span>
+                    </a>
+                  </li>
+                </ul>
+              </nav>
+              <nav class="menu__sns">
+                <ul class="sns__lists">
+                  <li class="sns__link">
+                    <a href="" class="sns__link-twitter">
+                      <img src="./img/pc/header-twitter.png" alt="" />
+                    </a>
+                  </li>
+                  <li class="sns__link">
+                    <a href="" class="sns__link-instagram">
+                      <img src="./img/pc/header-insta.png" alt="" />
+                    </a>
+                  </li>
+                  <li class="sns__link">
+                    <a href="" class="sns__link-youtube">
+                      <img src="./img/pc/header-youtube.png" alt="" />
+                    </a>
+                  </li>
+                </ul>
+              </nav>
+            </div>
+            <button
+              id="js-drawer-button"
+              class="header_menu-hunberger frontpage-hunberger"
+            >
+              <span class="header__menu-bar"></span>
+              <span class="header__menu-bar"></span>
+              <span class="header__menu-bar"></span>
+            </button>
+          </div>
+          <!-- <div class="header__contents"> -->
+          <div class="header-text">
+            <p>
+              パスタとコーヒーが<br
+                class="hidden__pc"
+              />とってもおいしい、<br />
+              ほっと落ち着くのんびり空間。
+            </p>
+          </div>
+          <div class="header__nav-card">
+            <div class="header__card-category">
+              <img src="./img/sp/header__card-category.png" alt="" />
+              <p>カテゴリ</p>
+            </div>
+            <img
+              src="./img/sp/header-fukidashi.png"
+              alt=""
+              class="pickupmenu"
+            />
+            <div class="header__card-img">
+              <img src="./img/sp/header-nav-link.jpg" alt="" />
+            </div>
+            <div class="header__nav-card-textbox">
+              <time class="header__card-time" datetime="2021.07.13"
+                >2021.07.13</time
+              >
+              <h3 class="header__card-text">
+                ダミー_国内外から賞賛を受けた選りすぐりのデザイナーが集結し、あらゆる空間が誕生。
+              </h3>
+            </div>
+          </div>
+        </div>
+      </header>
+
+      <div id="js-drawer__content" class="drawer-content">
+        <button class="drawer-content__title">
+          <a href="./" class="drawer-content__title-button">
+            <img src="./img/sp/drawer__icon.png" alt="" />
+          </a>
+        </button>
+        <nav class="drawer-content__menu">
+        <a href="./" class="drawer-content__link">
+            <span class="drawer-content__link-en">TOP</span>
+            <span class="drawer-content__link-slash"> ／ </span>
+            <span class="drawer-content__link-ja">トップ</span>
+          </a>
+          <a href="#" class="drawer-content__link">
+            <span class="drawer-content__link-en">CONCEPT</span>
+            <span class="drawer-content__link-slash"> ／ </span>
+            <span class="drawer-content__link-ja">コンセプト</span>
+          </a>
+          <a href="#" class="drawer-content__link">
+            <span class="drawer-content__link-en">MENU</span>
+            <span class="drawer-content__link-slash"> ／ </span>
+            <span class="drawer-content__link-ja">メニュー</span>
+          </a>
+          <a href="#" class="drawer-content__link">
+            <span class="drawer-content__link-en">NEWS</span>
+            <span class="drawer-content__link-slash"> ／ </span>
+            <span class="drawer-content__link-ja">お知らせ</span>
+          </a>
+          <a href="#" class="drawer-content__link">
+            <span class="drawer-content__link-en">SHOP</span>
+            <span class="drawer-content__link-slash"> ／ </span>
+            <span class="drawer-content__link-ja">店舗情報</span>
+          </a>
+          <a href="#" class="drawer-content__link">
+            <span class="drawer-content__link-en">GIFT</span>
+            <span class="drawer-content__link-slash"> ／ </span>
+            <span class="drawer-content__link-ja">ギフト・贈り物</span>
+          </a>
+          <a href="#" class="drawer-content__link">
+            <span class="drawer-content__link-en">CONTACT</span>
+            <span class="drawer-content__link-slash"> ／ </span>
+            <span class="drawer-content__link-ja">お問い合わせ</span>
+          </a>
+        </nav>
+        <nav class="drawer-content__sns">
+          <a href="" class="sns__icon drawer-content__sns-link-twitter">
+            <img src="./img/sp/drawer__twitter.png" alt="X" />
+          </a>
+          <a href="" class="sns__icon drawer-content__sns-link-instagram">
+            <img src="./img/sp/drawer__insta.png" alt="インスタ" />
+          </a>
+          <a href="" class="sns__icon drawer-content__sns-link-youtube">
+            <img src="./img/sp/drawer__youtube.png" alt="youtube" />
+          </a>
+        </nav>
+      </div>
+
+      <section class="concept">
+        <div class="concept__inner">
+          <div class="concept__container-textpart">
+            <h1 class="concept__title section__title">
+              <span class="concept__title-en">CONCEPT</span>
+              <span class="concept__title-sub">当店のこだわり</span>
+            </h1>
+            <div class="concept__text">
+              <h2 class="concept__text-tite">
+                最高のコーヒーと、<br />時の流れを味わうことができる
+                <br />手作りカフェ
+              </h2>
+              <p class="concept__text-body">
+                ダミー_国内外から賞賛を<br />
+                受けた選りすぐりのデザイナーが集結し、ガーデニングの設計・建築から料理まで、あらゆる空間が誕生。<br />
+                ダミー_国内外から賞賛を受けた選りすぐりのデザイナーが集結し、ガーデニングの設計・建築から料理まで、あらゆる空間が誕生。<br /><br />
+                ダミー_国内外から賞賛を受けた選りすぐりのデザイナーが集結し、ガーデニングの設計・建築から料理まで、あらゆる空間が誕生。
+              </p>
+            </div>
+            <a href="#" class="button concept__button">
+              <div class="button-body concept__button-body">
+                <span class="button__text">詳しくはこちら</span>
+              </div>
+              <div class="button-shadow concept__button-shadow"></div>
+            </a>
+          </div>
+          <picture class="concept__picture">
+            <source
+              media="(min-width: 900px)"
+              srcset="./img/pc/concept-picture-pc.jpg"
+            />
+            <img src="./img/sp/concept-picture.jpg" alt="" />
+          </picture>
+        </div>
+      </section>
+      <section class="l-lunch">
+        <div class="p-lunch__inner">
+          <!-- <picture class="lunch__fukidashi">
+        <img src="./img/sp/lunch__special-fukidashi.png" alt="" />
+      </picture> -->
+          <h1 class="concept__title section__title p-lunch__title">
+            <span class="concept__title-en concept__title-en-speciallunch"
+              >SPECIAL LUNCH SET</span
+            >
+            <span class="concept__title-sub">今月のスペシャルランチセット</span>
+          </h1>
+          <div class="pasta__cards">
+            <div class="pasta__cards-title">
+              <picture class="pasta__cards-title-background">
+                <img src="./img/sp/lunch-ribon.png" alt="" />
+              </picture>
+              <h1 class="pasta__cards-titletext">
+                お好きなパスタをお選びください
+              </h1>
+            </div>
+            <div class="pasta__card-A-D">
+              <div class="c-pasta__card">
+                <picture class="c-pasta__card-image">
+                  <img src="./img/sp/lunch-pasta1.png" alt="" />
+                </picture>
+                <div class="c-pasta__card-body">
+                  <picture class="c-pasta__card-alphabet">
+                    <img src="./img/sp/lunch-A.png" alt="" />
+                  </picture>
+                  <p class="c-pasta__card-text">テキストテキストの○○風パスタ</p>
+                </div>
+              </div>
+              <div class="c-pasta__card c-pasta__card-2">
+                <picture class="c-pasta__card-image">
+                  <img src="./img/sp/lunch-pasta2.png" alt="" />
+                </picture>
+                <div class="c-pasta__card-body">
+                  <picture class="c-pasta__card-alphabet">
+                    <img src="./img/sp/lunch-B.png" alt="" />
+                  </picture>
+                  <p class="c-pasta__card-text">テキストテキストの○○風パスタ</p>
+                </div>
+              </div>
+              <div class="c-pasta__card">
+                <picture class="c-pasta__card-image">
+                  <source
+                    media="(min-width: 900)"
+                    srcset="./img/pc/lunch-pasta3.png"
+                  />
+                  <img src="./img/sp/lunch-pasta3.png" alt="" />
+                </picture>
+                <div class="c-pasta__card-body">
+                  <picture class="c-pasta__card-alphabet">
+                    <img src="./img/sp/lunch-C.png" alt="" />
+                  </picture>
+                  <p class="c-pasta__card-text">テキストテキストの○○風パスタ</p>
+                </div>
+              </div>
+              <div class="c-pasta__card c-pasta__card-2">
+                <picture class="c-pasta__card-image">
+                  <img src="./img/sp/lunch-pasta4.png" alt="" />
+                </picture>
+                <div class="c-pasta__card-body">
+                  <picture class="c-pasta__card-alphabet">
+                    <img src="./img/sp/lunch-D.png" alt="" />
+                  </picture>
+                  <p class="c-pasta__card-text">テキストテキストの○○風パスタ</p>
+                </div>
+              </div>
+            </div>
+            <div class="speciallunch-set__card">
+              <div class="menu-cards">
+                <div class="menu-card__pasta">
+                  <img src="./img/sp/menu-pasta.png" alt="" />
+                </div>
+                <picture class="menu__plus">
+                  <img src="./img/sp/menu-plus.png" alt="" />
+                </picture>
+                <div class="menu-card__pasta">
+                  <img src="./img/sp/menu-salada.png" alt="" />
+                </div>
+                <picture class="menu__plus">
+                  <img src="./img/sp/menu-plus.png" alt="" />
+                </picture>
+                <div class="menu-card__pasta">
+                  <img src="./img/sp/menu-drink.png" alt="" />
+                </div>
+              </div>
+              <div class="speciallunch-set__card-body">
+                <h2 class="speciallunch-set__card-title">
+                  スペシャルランチセット
+                </h2>
+                <p class="speciallunch-set__card-text">【選べる3品】</p>
+                <span class="speciallunch-set__card-price">1,280 yen</span>
+                <time class="speciallunch-set__card-time"
+                  >(11:00 AM〜14:00 PMまで)</time
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="grand-menu">
+        <div class="grand-menu__inner">
+          <h1 class="concept__title section__title grand-menu-section__title">
+            <span class="concept__title-en concept__title-en-speciallunch"
+              >GRAND MENU</span
+            >
+            <span class="concept__title-sub">グランドメニュー</span>
+          </h1>
+          <div class="grand-menu__body">
+            <div class="grand-menu__main grand-menu__pasta">
+              <h2 class="grand-menu__title">パスタ</h2>
+              <div class="grand-menu__cards">
+                <div class="grand-menu__card">
+                  <picture class="grand-menu__card-image">
+                    <img src="./img/menu/pasta/img_pasta1.jpg" alt="" />
+                  </picture>
+                  <p class="grand-menu__card-text">
+                    テキストテキストテキストの○○○○風パスタ
+                  </p>
+                  <span class="grand-menu__card-price">780 yen</span>
+                </div>
+                <div class="grand-menu__card">
+                  <picture class="grand-menu__card-image">
+                    <img src="./img/menu/pasta/img_pasta2.jpg" alt="" />
+                  </picture>
+                  <p class="grand-menu__card-text">
+                    テキストテキストの○○風パスタ
+                  </p>
+                  <span class="grand-menu__card-price">780 yen</span>
+                </div>
+                <div class="grand-menu__card">
+                  <picture class="grand-menu__card-image">
+                    <img src="./img/menu/pasta/img_pasta3.jpg" alt="" />
+                  </picture>
+                  <p class="grand-menu__card-text">
+                    テキストテキストの○○風パスタ
+                  </p>
+                  <span class="grand-menu__card-price">780 yen</span>
+                </div>
+              </div>
+            </div>
+            <div class="grand-menu__main grand-menu__salada">
+              <h2 class="grand-menu__title">サラダ</h2>
+              <div class="grand-menu__cards">
+                <div class="grand-menu__card">
+                  <picture class="grand-menu__card-image">
+                    <img src="./img/menu/salada/img_salada1.jpg" alt="" />
+                  </picture>
+                  <p class="grand-menu__card-text">○○○○風サラダ</p>
+                  <span class="grand-menu__card-price">780 yen</span>
+                </div>
+                <div class="grand-menu__card">
+                  <picture class="grand-menu__card-image">
+                    <img src="./img/menu/salada/img_salada2.jpg" alt="" />
+                  </picture>
+                  <p class="grand-menu__card-text">○○○○風サラダ</p>
+                  <span class="grand-menu__card-price">780 yen</span>
+                </div>
+                <div class="grand-menu__card">
+                  <picture class="grand-menu__card-image">
+                    <img src="./img/menu/salada/img_salada3.jpg" alt="" />
+                  </picture>
+                  <p class="grand-menu__card-text">○○○○風サラダ</p>
+                  <span class="grand-menu__card-price">780 yen</span>
+                </div>
+              </div>
+            </div>
+            <div class="grand-menu__main grand-menu__pan$sweets">
+              <h2 class="grand-menu__title">パン & スイーツ</h2>
+              <div class="grand-menu__cards">
+                <div class="grand-menu__card">
+                  <picture class="grand-menu__card-image">
+                    <img src="./img/menu/pan$sweets/img_sweets1.jpg" alt="" />
+                  </picture>
+                  <p class="grand-menu__card-text">○○○○サンド</p>
+                  <span class="grand-menu__card-price">780 yen</span>
+                </div>
+                <div class="grand-menu__card">
+                  <picture class="grand-menu__card-image">
+                    <img src="./img/menu/pan$sweets/img_sweets2.jpg" alt="" />
+                  </picture>
+                  <p class="grand-menu__card-text">○○○○サンド</p>
+                  <span class="grand-menu__card-price">780 yen</span>
+                </div>
+                <div class="grand-menu__card">
+                  <picture class="grand-menu__card-image">
+                    <img src="./img/menu/pan$sweets/img_sweets3.jpg" alt="" />
+                  </picture>
+                  <p class="grand-menu__card-text">○○○○サンド</p>
+                  <span class="grand-menu__card-price">780 yen</span>
+                </div>
+                <div class="grand-menu__card">
+                  <picture class="grand-menu__card-image">
+                    <img src="./img/menu/pan$sweets/img_sweets4.jpg" alt="" />
+                  </picture>
+                  <p class="grand-menu__card-text">○○○○サンド</p>
+                  <span class="grand-menu__card-price">780 yen</span>
+                </div>
+                <div class="grand-menu__card">
+                  <picture class="grand-menu__card-image">
+                    <img src="./img/menu/pan$sweets/img_sweets5.jpg" alt="" />
+                  </picture>
+                  <p class="grand-menu__card-text">○○○○サンド</p>
+                  <span class="grand-menu__card-price">780 yen</span>
+                </div>
+                <div class="grand-menu__card">
+                  <picture class="grand-menu__card-image">
+                    <img src="./img/menu/pan$sweets/img_sweets6.jpg" alt="" />
+                  </picture>
+                  <p class="grand-menu__card-text">○○○○サンド</p>
+                  <span class="grand-menu__card-price">780 yen</span>
+                </div>
+              </div>
+            </div>
+            <div class="grand-menu__main grand-menu__drink">
+              <h2 class="grand-menu__title">ドリンク</h2>
+              <div class="drink__menu">
+                <picture class="grand-menu__card-image drink__menu-image">
+                  <img src="./img/menu/drink/img_drink6.jpg" alt="" />
+                </picture>
+                <div class="drink__menu-textpart">
+                  <div class="drink__menu--coffee">
+                    <h3 class="drink__menu--title">コーヒー</h3>
+                    <ul class="drink__menulist">
+                      <li class="drink__menu-content">
+                        <span class="menu__name">ブレンド</span>
+                        <span class="menu__price">500 yen</span>
+                      </li>
+                      <li class="drink__menu-content">
+                        <span class="menu__name">カフェラテ</span>
+                        <span class="menu__price">500 yen</span>
+                      </li>
+                      <li class="drink__menu-content">
+                        <span class="menu__name">豆乳ラテ</span>
+                        <span class="menu__price">500 yen</span>
+                      </li>
+                      <li class="drink__menu-content">
+                        <span class="menu__name">カフェモカ</span>
+                        <span class="menu__price">500 yen</span>
+                      </li>
+                      <li class="drink__menu-content">
+                        <span class="menu__name">キャラメルラテ</span>
+                        <span class="menu__price">500 yen</span>
+                      </li>
+                      <li class="drink__menu-content">
+                        <span class="menu__name">バニララテ</span>
+                        <span class="menu__price">500 yen</span>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="drink__menu--blacktea">
+                    <h3 class="drink__menu--title">紅茶</h3>
+                    <ul class="drink__menulist">
+                      <li class="drink__menu-content">
+                        <span class="menu__name">ストレート</span>
+                        <span class="menu__price">500 yen</span>
+                      </li>
+                      <li class="drink__menu-content">
+                        <span class="menu__name">ミルク</span>
+                        <span class="menu__price">500 yen</span>
+                      </li>
+                      <li class="drink__menu-content">
+                        <span class="menu__name">アップル</span>
+                        <span class="menu__price">500 yen</span>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="drink__menu--softdrink">
+                    <h3 class="drink__menu--title">ソフトドリンク</h3>
+                    <ul class="drink__menulist">
+                      <li class="drink__menu-content">
+                        <span class="menu__name">バナナ</span>
+                        <span class="menu__price">500 yen</span>
+                      </li>
+                      <li class="drink__menu-content">
+                        <span class="menu__name">オレンジ</span>
+                        <span class="menu__price">500 yen</span>
+                      </li>
+                      <li class="drink__menu-content">
+                        <span class="menu__name">アップル</span>
+                        <span class="menu__price">500 yen</span>
+                      </li>
+                      <li class="drink__menu-content">
+                        <span class="menu__name">マンゴー</span>
+                        <span class="menu__price">500 yen</span>
+                      </li>
+                      <li class="drink__menu-content">
+                        <span class="menu__name">ミックス</span>
+                        <span class="menu__price">500 yen</span>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <a href="#" class="button grand-menu__button">
+                <div class="button-body">
+                  <span class="button__text">その他のメニュー </span>
+                </div>
+                <div class="button-shadow concept__button-shadow"></div>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="gallery">
+        <div class="gallery__inner inner">
+          <h1 class="concept__title section__title gallery-section__title">
+            <span class="concept__title-en gallery-concept__title-en"
+              >GALLERY</span
+            >
+            <span class="concept__title-sub">ギャラリー</span>
+          </h1>
+          <ul class="gallery__images">
+            <li class="gallery__image">
+              <img src="./img/pc/gallery1.jpg" alt="" />
+            </li>
+            <li class="gallery__image">
+              <img src="./img/pc/gallery2.jpg" alt="" />
+            </li>
+            <li class="gallery__image">
+              <img src="./img/pc/gallery3.jpg" alt="" />
+            </li>
+            <li class="gallery__image">
+              <img src="./img/pc/gallery4.jpg" alt="" />
+            </li>
+          </ul>
+          <button class="button gallery__button">
+            <div class="button-body">
+              <a href="#">
+                <span class="button__text gallery-button__text"
+                  >インスタグラムを見る</span
+                >
+              </a>
+            </div>
+            <div class="button-shadow"></div>
+          </button>
+        </div>
+      </section>
+      <section class="news">
+        <div class="news__inner">
+          <h1 class="concept__title section__title news-section__title">
+            <span class="concept__title-en">NEWS</span>
+            <span class="concept__title-sub">お知らせ</span>
+          </h1>
+          <div class="news__cards">
+            <div class="news__cards-main">
+              <div class="news__cards-main-image">
+                <img src="./img/pc/news1.jpg" alt="" />
+              </div>
+              <h2 class="news__cards-main-title">
+                ダミー_国内外から賞賛を受けた選りすぐりのデザイナーが集結し、ガーデニングの設計・建築から料理まで、あらゆる空間が誕生。
+              </h2>
+              <p class="news__cards-main-text">
+                テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト
+              </p>
+              <div class="news__cards-main-time">2021.01.01</div>
+            </div>
+            <ul class="news__cards-lists">
+              <li class="news__cards-list">
+                <div class="news__cards-list-image">
+                  <img src="./img/pc/news1.jpg" alt="" />
+                </div>
+                <h2 class="news__cards-list-text">
+                  ダミー_国内外から賞賛を受けた選りすぐりのデザイナーが集結し、あらゆる空間が誕生。
+                </h2>
+                <div class="news__cards-list-time">2021.01.01</div>
+              </li>
+              <li class="news__cards-list">
+                <div class="news__cards-list-image">
+                  <img src="./img/pc/news1.jpg" alt="" />
+                </div>
+                <h2 class="news__cards-list-text">
+                  ダミー_国内外から賞賛を受けた選りすぐりのデザイナーが集結し、あらゆる空間が誕生。
+                </h2>
+                <div class="news__cards-list-time">2021.01.01</div>
+              </li>
+              <li class="news__cards-list">
+                <div class="news__cards-list-image">
+                  <img src="./img/pc/news1.jpg" alt="" />
+                </div>
+                <h2 class="news__cards-list-text">
+                  ダミー_国内外から賞賛を受けた選りすぐりのデザイナーが集結し、あらゆる空間が誕生。
+                </h2>
+                <div class="news__cards-list-time">2021.01.01</div>
+              </li>
+              <li class="news__cards-list">
+                <div class="news__cards-list-image">
+                  <img src="./img/pc/news1.jpg" alt="" />
+                </div>
+                <h2 class="news__cards-list-text">
+                  ダミー_国内外から賞賛を受けた選りすぐりのデザイナーが集結し、あらゆる空間が誕生。
+                </h2>
+                <div class="news__cards-list-time">2021.01.01</div>
+              </li>
+            </ul>
+          </div>
+          <a href="#" class="button news_button">
+            <div class="button-body">
+              <span class="button__text">過去のお知らせ</span>
+            </div>
+            <div class="button-shadow concept__button-shadow"></div>
+          </a>
+        </div>
+      </section>
+
+<section class="access">
+        <div class="access__inner">
+          <h1 class="concept__title section__title access-section__title">
+            <span class="concept__title-en">ACCESS</span>
+            <span class="concept__title-sub">アクセス</span>
+          </h1>
+          <div class="access__map">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4582.081583963916!2d139.57873685411278!3d35.70110182086297!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6018ee39b555205f%3A0xabb26a0a2fbda595!2z44CSMTgwLTAwMDMg5p2x5Lqs6YO95q2m6JS16YeO5biC5ZCJ56Wl5a-65Y2X55S677yR5LiB55uu!5e0!3m2!1sja!2sjp!4v1737296380120!5m2!1sja!2sjp"
+              width="100%"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+              class="hidden__pc"
+            ></iframe>
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4582.081583963916!2d139.57873685411278!3d35.70110182086297!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6018ee39b555205f%3A0xabb26a0a2fbda595!2z44CSMTgwLTAwMDMg5p2x5Lqs6YO95q2m6JS16YeO5biC5ZCJ56Wl5a-65Y2X55S677yR5LiB55uu!5e0!3m2!1sja!2sjp!4v1737296467831!5m2!1sja!2sjp"
+              width="668"
+              height="367"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+              class="hidden__sp"
+            ></iframe>
+          </div>
+          <div class="access__body">
+            <div class="access__body-first">
+              <ul class="access__body-first-lists">
+                <li class="access__body-first-list">
+                  <span class="access__list-term">住所</span>
+                  <span class="access__list-discription"
+                    >〒000-0000 <br />
+                    東京都武蔵野市吉祥寺南町一丁目</span
+                  >
+                </li>
+                <li class="access__body-first-list">
+                  <span class="access__list-term">TEL</span>
+                  <span class="access__list-discription letterspacing05"
+                    >0123-456-789</span
+                  >
+                </li>
+                <li class="access__body-first-list">
+                  <span class="access__list-term">Mail</span>
+                  <span class="access__list-discription letterspacing03"
+                    >example@mail.com</span
+                  >
+                </li>
+              </ul>
+            </div>
+            <div class="access__body-second">
+              <ul class="access__body-second-lists">
+                <li class="access__body-second-list">
+                  <span class="access__list-term">営業時間</span>
+                  <span class="access__list-discription"
+                    >7:00〜21:00 <br />
+                    ※ラストオーダー 20:30</span
+                  >
+                </li>
+                <li class="access__body-second-list">
+                  <span class="access__list-term">定休日</span>
+                  <span class="access__list-discription">水曜日</span>
+                </li>
+                <li class="access__body-second-list">
+                  <span class="access__list-term">座席</span>
+                  <span class="access__list-discription"
+                    >テーブル20席 ／ カウンター席6席</span
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <footer class="footer">
+        <div class="footer__sns">
+          <div class="sns__icon footer__sns-twitter">
+            <a href="">
+              <img src="./img/pc/footer-twitter.png" alt="" />
+            </a>
+          </div>
+          <div class="sns__icon footer__sns-instagram">
+            <a href="">
+              <img src="./img/pc/footer-instagram.png" alt="" />
+            </a>
+          </div>
+          <div class="sns__icon footer__sns-youtube">
+            <a href="">
+              <img src="./img/pc/footer-youtube.png" alt="" />
+            </a>
+          </div>
+        </div>
+        <small class="footer-text"
+          >©︎2000-2021 open cafe. All Rights Reserved.</small
+        >
+        <a href="#" class="pagetop" id="js-pagetop">
+          <img src="./img/pc/to-top.png" alt="ページトップ" />
+        </a>
+      </footer>
+      <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="./js/script.js"></script>
+  </body>
+</html>
