@@ -124,6 +124,8 @@ if (typeof Swiper !== "undefined" && document.querySelector(".swiper")) {
   const swiper = new Swiper(".swiper", {
     effect: "fade",
     loop: true,
+    preventClicks: false,
+    preventClicksPropagation: false,
     navigation: {
       nextEl: ".swiper-button-next",
       prevEl: ".swiper-button-prev",

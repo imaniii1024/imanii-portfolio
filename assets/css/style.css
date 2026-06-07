@@ -1457,6 +1457,13 @@ a {
   z-index: 1;
 }
 
+.works-page .works-page__card > a {
+  color: inherit;
+  display: block;
+  height: 100%;
+  text-decoration: none;
+}
+
 .works-page .works-page__image {
   aspect-ratio: 16/9;
   border-radius: 8px;
