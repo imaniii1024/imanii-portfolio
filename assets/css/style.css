@@ -706,6 +706,8 @@ a {
 .about-profile__heading {
   display: grid;
   gap: 18px;
+  justify-items: center;
+  text-align: center;
 }
 
 .about-profile__photo {
@@ -720,7 +722,7 @@ a {
 }
 
 .about-profile__photo img {
-  aspect-ratio: 4/5;
+  aspect-ratio: 1/1;
   display: block;
   height: auto;
   object-fit: cover;
@@ -734,6 +736,9 @@ a {
   font-size: clamp(28px, 7vw, 44px);
   line-height: 1.25;
   margin: 0;
+  max-width: 320px;
+  text-align: center;
+  width: 100%;
 }
 
 .about-profile__heading h2 span {
