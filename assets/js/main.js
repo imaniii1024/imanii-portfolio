@@ -141,6 +141,59 @@ if (typeof Swiper !== "undefined" && document.querySelector(".swiper")) {
   });
 }
 
+// Works cards
+(function () {
+  const cards = document.querySelectorAll(
+    ".works__card, .works-page__card, .works-page__grid-card"
+  );
+
+  cards.forEach(function (card) {
+    const link = card.querySelector('a[href*="/demo/"]');
+    if (!link) return;
+
+    let startX = 0;
+    let startY = 0;
+    let moved = false;
+
+    card.style.cursor = "pointer";
+
+    card.addEventListener("pointerdown", function (event) {
+      startX = event.clientX;
+      startY = event.clientY;
+      moved = false;
+    });
+
+    card.addEventListener("pointermove", function (event) {
+      if (Math.hypot(event.clientX - startX, event.clientY - startY) > 8) {
+        moved = true;
+      }
+    });
+
+    card.addEventListener("click", function (event) {
+      if (
+        moved ||
+        event.metaKey ||
+        event.ctrlKey ||
+        event.shiftKey ||
+        event.altKey
+      ) {
+        return;
+      }
+
+      if (
+        event.target.closest(
+          ".swiper-button-next, .swiper-button-prev, .swiper-pagination"
+        )
+      ) {
+        return;
+      }
+
+      event.preventDefault();
+      window.location.assign(link.href);
+    });
+  });
+})();
+
 function updatePagination(swiper) {
   const slides = document.querySelectorAll(".swiper-slide img");
   const paginationEl = document.querySelector(".swiper-pagination");
