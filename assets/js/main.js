@@ -189,6 +189,17 @@ if (typeof Swiper !== "undefined" && document.querySelector(".swiper")) {
       }
 
       event.preventDefault();
+
+      if (link.target === "_blank") {
+        const newWindow = window.open(
+          link.href,
+          "_blank",
+          "noopener,noreferrer"
+        );
+        if (newWindow) newWindow.opener = null;
+        return;
+      }
+
       window.location.assign(link.href);
     });
   });
