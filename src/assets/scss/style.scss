@@ -1594,6 +1594,11 @@ a {
   z-index: 1;
 }
 
+.works-page .works-page__slider .works-page__card {
+  aspect-ratio: auto;
+  padding: 10px;
+}
+
 .works-page .works-page__card > a {
   color: inherit;
   display: block;
@@ -1609,6 +1614,10 @@ a {
 
 .works-page .works-page__body {
   height: clamp(75px, 75px + 25 * (100vw - 375px) / 1065, 100px);
+}
+
+.works-page .works-page__slider .works-page__body {
+  display: none;
 }
 
 .works-page .works-page__card-title {
